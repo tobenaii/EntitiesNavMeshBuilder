@@ -27,7 +27,7 @@ namespace EntitiesNavMeshBuilder.Utility
                 list.Capacity = newLength;
             }
 
-            var items = NoAllocHelpers.ExtractArrayFromListT(list);
+            var items = NoAllocHelpers.ExtractArrayFromList(list);
             var size = UnsafeUtility.SizeOf<T>();
 
             // Get the pointer to the end of the list
